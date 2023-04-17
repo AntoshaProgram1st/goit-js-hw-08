@@ -1,4 +1,4 @@
-import throttle from 'lodash.throttle';
+import throttle from '../../node_modules/lodash.throttle/index.js';
 
 const storageKey = 'feedback-form-state';
 const emailInput = document.querySelector('input[name="email"]');
@@ -38,8 +38,6 @@ const handleSubmit = event => {
   localStorage.removeItem(storageKey);
   emailInput.value = '';
   messageInput.value = '';
-
-  
 };
 
 form.addEventListener('submit', handleSubmit);
