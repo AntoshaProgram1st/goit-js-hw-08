@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', loadStateFromStorage);
 const handleSubmit = event => {
   event.preventDefault();
 
+  if (emailInput.value === "" || messageInput.value === "") {
+    alert("Будь ласка заповніть всі поля форми!")
+    return
+  }
+
   const feedbackFormState = {
     email: emailInput.value,
     message: messageInput.value,

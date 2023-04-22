@@ -15,3 +15,4 @@ if (localStorage.getItem('videoplayer-current-time')) {
   player
     .setCurrentTime(localStorage.getItem('videoplayer-current-time'))
   }
+ 
